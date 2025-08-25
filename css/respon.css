@@ -1590,6 +1590,35 @@
         font-size: 20px;
     }
     /* End Testimonial */
+	
+	
+	.popup-container {
+    display: none;
+    
+    }
+
+	 .popup-content {
+       padding: 15px;
+	    width: 320px;
+    }
+	.close-btn {
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+  
+   }
+    .popup-item img {
+        max-width: 270px;
+		margin-top: 24px;
+    }
+    .popup-item p {
+       font-size: 20px;
+    }
+	.download-btn {
+	font-size: 16px;	
+    padding: 6px 16px;
+	margin-bottom: 5px ;
+    }
 }
 /* End Media Query for max-width: 768px */
 
@@ -2164,7 +2193,32 @@
         font-size: 20px;
     }
     /* End Testimonial */
+	.popup-container {
+    display: none;    
+    }
 	
+	 .popup-content {
+       padding: 12px;
+	    width: 260px;
+    }
+	.close-btn {
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+  
+   }
+    .popup-item img {
+        max-width: 225px;
+		margin-top: 30px;
+    }
+    .popup-item p {
+       font-size: 16px;
+    }
+	.download-btn {
+	font-size: 13px;	
+    padding: 4px 14px;
+	margin-bottom: 10px ;
+    }
 }	
 	
 

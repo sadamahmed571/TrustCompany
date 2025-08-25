@@ -414,7 +414,7 @@ body {
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 18, 72, 0.7), rgba(0, 18, 72, 0.7)), url(../img/carousel-2.jpg);
+    background: linear-gradient(rgba(0, 18, 72, 0.7), rgba(0, 18, 72, 0.7)), url(../img/footer-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1968,6 +1968,10 @@ body {
 }
 /*** testimonial End ***/
 
+
+
+
+
 /*** Contact Start ***/
 .contact .contact-map {
     position: relative;
@@ -1996,6 +2000,99 @@ body {
     right: 0;
     background: var(--bs-secondary);
     z-index: -1;
+}
+
+.text-center-max-width {
+    max-width: 800px;
+}
+.contact-sub-title {
+    font-size: 26px;
+    font-weight: 450;
+    color: #ce7529;
+    line-height: 0.4;
+	text-align: right;
+}
+
+.contact-title {
+    font-size: 38px;
+    font-weight: 510;
+    color: #181b25;
+    line-height: 1.3;
+    margin-bottom: 20px;
+	text-align: right;
+}
+
+.contact-title2 {
+    margin-bottom: 25px;
+    font-size: 23px;
+    font-weight: 510;
+    color: #ce7529;
+	border-top:1px solid #181b25;
+	padding-top: 24px;
+}
+
+.contact-info-title {
+    color: #ce7529 !important;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.contact-desc {
+    margin-bottom: 15px;
+    margin-top: 0;
+    line-height: 1.6;
+    font-size: 21px;
+    font-weight: 500;
+    color: #181b25;
+    text-align: right;
+}
+
+
+.comment-icon {
+    padding-left: 5px;
+    color: #ce7529;
+}
+
+.form-floating label {
+    text-align: right;
+}
+
+.textarea-height {
+    height: 160px;
+}
+
+.map-height {
+    min-height: 365px;
+}
+
+@media (max-width: 991px) {
+    .contact .contact-map {
+        height: calc(1.25 * 100vw); /* 125% من عرض الشاشة */
+    }
+}
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-spacing {
+    margin-left: 8px !important;
+}
+
+.social-icons-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 8px; /* مباعدة بين الأيقونات */
+}
+
+.btn-md-square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*** Contact End ***/
 
@@ -2117,3 +2214,83 @@ body {
     background: var(--bs-dark);
 }
 /*** copyright end ***/
+   
+
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    max-width: 90%;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 33px;
+    cursor: pointer;
+    color: #d1b9a4;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #ce7529;
+}
+
+.popup-item img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+	margin-top: 19px;
+}
+
+.popup-item p {
+    font-size: 21px;
+    font-weight: 500;
+    color: #181b25;
+    margin: 0;
+}
+
+.download-btn {
+    display: inline-block;
+	 font-size: 16px;
+    padding: 8px 18px;
+    background-color: #ce7529;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+	margin-bottom: 12px ;
+}
+
+.download-btn:hover {
+    background-color: #181b25;
+	color: white;
+}
+
+.download-btn i {
+    margin-left: 8px;
+}
