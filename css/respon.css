@@ -1025,6 +1025,8 @@
 
 /* Start Media Query for max-width: 768px */
 @media (max-width: 768px) {
+    
+    
     /* Start WhatsApp Float Button */
     .whats-float {
         width: 105px; 
@@ -1578,20 +1580,62 @@
             margin-top: 0;
         }
     /* End Counter */
-
-    /* Start Testimonial */
-    .owl-carousel.testimonial-carousel {
-        padding-top: 20px;
+        .team .container {
+        max-width:95%;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
-    .testimonial .owl-nav .owl-prev,
-    .testimonial .owl-nav .owl-next {
-        top: -25px;
+    .team .team-item {
+		width: 275px;
+        max-width: 100%; /* عرض كامل للعناصر على الشاشات الصغيرة */
+        margin-bottom: 15px;
+        height: 400px; /* الارتفاع المحدد للعنصر team-item */
+        display: flex;
+        flex-direction: column;
+        overflow: auto; /* للتعامل مع المحتوى الزائد إذا كان موجودًا */
+    }
+
+    .team .team-item .team-img {
+        flex: 1; /* الصورة تأخذ المساحة المتبقية */
+        overflow: hidden;
+        display: flex; /* لتوسيط الصورة إذا لزم الأمر */
+        align-items: center; /* توسيط الصورة عموديًا */
+        justify-content: center; /* توسيط الصورة أفقيًا */
+    }
+
+    .team .team-item .team-img img {
+        width: 100%;
+        max-height: 100%; /* ضمان عدم تجاوز الارتفاع */
+        object-fit: contain; /* الصورة تظهر كاملة مع الحفاظ على النسبة */
+        object-position: center; /* توسيط الصورة */
+    }
+
+    .team .team-item .team3 {
+        flex-shrink: 0; /* منع تقلص قسم النصوص */
+    }
+
+    .team-title {
+        font-size: 30px;
+    }
+
+    .team-sub-title {
         font-size: 20px;
     }
-    /* End Testimonial */
-	
-	
+
+    .team-title2 {
+        font-size: 20px;
+    }
+
+    .team-desc {
+        font-size: 14px;
+    }
+
+    .team-read-more2 {
+        font-size: 9px;
+        padding: 4px 8px;
+    }
+    
 	.popup-container {
     display: none;
     
@@ -1628,6 +1672,16 @@
 
 /* Start Media Query for max-width: 480px */
 @media (max-width: 480px) {
+    
+    .bg-breadcrumb {
+   min-height:120px;
+    padding: 5px 5px;
+     font-size: 20px;   
+    }
+	.bg-breadcrumb-title{
+	font-size: 28px ;
+	margin-top: 27px ;
+   }
       /* Start WhatsApp Float Button */
     .whats-float {
         width: 105px; 
@@ -1733,6 +1787,7 @@
 
     .navbar .navbar-toggler {
         text-align: right;
+        font-size: 22px;
     }
 
     .navbar .navbar-nav .nav-item::after,
@@ -1803,28 +1858,31 @@
 
     /* Start Carousel */
     .carousel-title {   
-        font-size: 55px;
+        font-size: 33px;
         font-weight: 800;
+        line-height: 1.5; 
         margin-bottom: 20px;
+        padding: 0;
     }
 
     .carousel-p2 {
-        line-height: 1.3;   
-        font-size: 23px;
+        line-height: 1.7;   
+        font-size: 19px;
         font-weight: 500;
+        
     }
 
     .carousel-caption-p {
-        line-height: 1.8; 
-        font-size: 27px;
+        line-height: 1.5; 
+        font-size: 17px;
         font-weight: 400;
-        padding: 10px;
+        padding: 2px;
         margin-bottom: 50px;
     }
 
     .carousel-caption a {
         border-radius: 5px;
-        font-size: 22px;
+        font-size: 17px;
         font-weight: 600;
         padding: 12px 22px;
     }
@@ -1833,23 +1891,23 @@
         line-height: 1.3; 
         padding-right: 13px;
         font-weight: 100;
-        font-size: 23px;
+        font-size: 17px;
     }
 
     .carousel .carousel-control-prev .carousel-control-prev-icon {
         position: absolute;
-        left: 1%;
+        left: 0;
         padding: 1px 2px;
         background: none;
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .carousel .carousel-control-next .carousel-control-next-icon {
         position: absolute;
-        right: 1%;
+        right: 0;
         padding: 1px 2px;
         background: none;
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .carousel .carousel-control-prev .carousel-control-prev-icon:hover,
@@ -1867,7 +1925,7 @@
     .horizontal-about {
         display: flex;
         justify-content: space-between;
-        gap: 18px;
+        gap: 1px;
         flex-wrap: nowrap;
     }
 
@@ -1883,29 +1941,50 @@
     }
 
     .horizontal-about .about-item .text-secondary i {
-        font-size: 30px !important;
+        font-size: 18px !important;
     }
 
     .horizontal-about .about-item h5 {
         margin-right: 0 !important;
-        font-size: 17px;
+        font-size: 19px !important;
         line-height: 1.3;
     }
+.about-sub-title  {
+    font-size: 18px;
+    font-weight: 450;
+	line-height:0.5;
+	 text-align:center;  
+}
 
+.about-title {
+    font-size: 27px;
+    font-weight: 510;  
+   text-align:center;  
+}
+
+.about-p1  {
+    font-size: 20px;
+    font-weight: 400;	
+	margin-top: 12px;
+	line-height: 1.5;
+}
     .about-item-content {
-        padding: 0 15px;
+        padding: 0  ;
     }
 
     .features-grid {
-        margin-top: 20px;
+		margin-top: 0 !important;
+        margin-left: 15px!important;
+		right: 0 !important;
     }
 
     .about-p {
-        font-size: 17px;
+        font-size: 15px;
+		font-weight: 500;
     }
 
     .about a {
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .about .about-item-image .img-1 {
@@ -1931,7 +2010,7 @@
     /* Start Services */
     .services-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 40px;
     }
 
     .service .service-item {
@@ -1939,22 +2018,33 @@
     }
 
     .service h2 {
-        font-size: 32px;
+        font-size: 30px;
         text-align: center;
     }
 
     .service h4,
     .service h5 {
-        font-size: 22px;
+        font-size: 24px;
     }
+.service-p1  {
+    font-size: 19px;   
+	margin-top: 5px;
+	line-height: 1.4;
+	 margin-bottom: 0;
+}
+     .ser-btn1 {
+          width:270px;
+          height: 170px;    
+        }
 
-    .ser-btn1 img {
-        width: 100%;
-        height: auto;
-    }
+        .ser-btn1 img {
+          width: 270px;
+          height: 170px;
+        }
+
 
     .ser-description {
-        font-size: 16px;
+        font-size: 17px;
         padding: 10px;
     }
 
@@ -1964,8 +2054,8 @@
     }
 
     .ser-main-container {
-        margin: 20px auto 0 auto;
-        padding: 0 15px;
+        margin:5px auto 0 auto;
+        padding: 0 5px;
     }
 
     .ser-image-container {
@@ -1973,10 +2063,21 @@
     }
 
     .ser-slide-container2 {
-        width:380px; 
+        width:100%; 
     }
-     .ser-slide-container2-p {            
-            font-size: 25px; 
+     .ser-slide-container2-p {
+            font-size: 25px;
+			margin-top: 43px;
+        }
+
+        .ser-slide-container2-p::before {         
+            width:10%;
+        }
+
+        .ser-slide-container2-p::after {
+             width: 40%; 
+            background-color: #ce7529;
+            margin-right: 10px; 
         }
     .ser-slide-group input:checked ~ .ser-slide-content2 {
         max-height: 500px;
@@ -1998,8 +2099,9 @@
     }
 
     .ser-product-description2 {
-        font-size: 16px;
+        font-size: 17px;
         text-align: center;
+		font-weight: 500;
     }
 
     .ser-slide-title2 {
@@ -2018,7 +2120,7 @@
         align-self: center;
     }
 	.ser-read-more3 {
-			font-size: 15px;
+			font-size: 17px;
             padding: 10px 20px;
             margin-top: 20px;
         }
@@ -2028,7 +2130,7 @@
     .feature .row {
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 20px;
 		 width: 100%;
     }
 
@@ -2037,27 +2139,30 @@
     }
 
     .feature .feature-item {
-        padding: 20px 15px !important;
+        padding: 10px 10px !important;
         min-height: 320px;
         gap: 10px;
     }
 .feature-sub-title  {
-    font-size: 24px;   
+    font-size: 23px;   
 	line-height:0.3;
+	font-weight: 500;
 }
 
 .feature-title {
-    font-size: 32px;   
+    font-size: 31px;   
 	line-height:1.5;
 }
     .feature-item h4 {
-        font-size: 20px;
+        font-size: 19px;
         line-height: 1.4;
     }
 
     .feature-item p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5;
+		padding-left: 0;
+	 padding-right: 0;
     }
 
     .feature-image {
@@ -2085,10 +2190,17 @@
 }
 
 .project-title {
-    font-size: 35px;   
+    font-size: 32px;   
     line-height:1.5;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
+.project-p1  {
+    font-size: 18px;  
+	margin-top: 5px;
+	line-height: 1.5;
+	 margin-bottom: 10px;
+}
+
 .project-name {  
     font-size: 22px;   
     margin-right	: 16px;
@@ -2097,13 +2209,16 @@
 .project-name::before {  
     font-size: 1em;
 }
-
+.project-name span {    
+    font-size: 13px; 
+    margin-right: 8px;	
+}
 .project-dec {  
     font-size: 17px;
 	line-height: 1.5;    
     margin-right	: 26px;
-	margin-left	: 36px;
-	 margin-top: 10px;
+	margin-left	: 26px;
+	 margin-top: 8px;
 }
     .project-img2 {
         width: 100%;
@@ -2117,12 +2232,15 @@
         flex-direction: column;
     }
     .project-content {
-        padding-top: 5px;
+        padding-top: 1px;
     }
 	
 	.project-read-more3 {          
-            font-size: 16px;
+            font-size: 15px;
             padding: 10px 20px;           
+        }
+		.project-read-more3 i {  
+            display: none;
         }
     /* Start Counter */
     .counter {
@@ -2182,17 +2300,96 @@
         }
     /* End Counter */
 
-    /* Start Testimonial */
-    .owl-carousel.testimonial-carousel {
-        padding-top: 20px;
-    }
+     .team .team-item {
+    width: 95%; /* A width that allows one item per row */
+    margin: 2%;
+	max-height: 450px;
+  }
+  
+  .team-sub-title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 0.2;
+}
 
-    .testimonial .owl-nav .owl-prev,
-    .testimonial .owl-nav .owl-next {
-        top: -25px;
-        font-size: 20px;
-    }
-    /* End Testimonial */
+.team-title {
+    font-size: 32px;  
+}
+
+.team-p1  {
+    font-size: 20px;
+	margin-top: 5px;
+	line-height: 1.4;
+	 margin-bottom: 25px;
+}
+
+.team-title2 {
+    margin-bottom: 0;
+    font-size: 26px;
+}
+
+.team-span {   
+    font-size: 14px;
+}
+
+.team-desc {
+    line-height: 1.65;
+    font-size: 18px;
+}
+
+.team-info {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.team-read-more2 {
+    font-size: 13px;
+    width: 200px;
+	height: 30px; 
+    margin-bottom: 10px;
+	line-height: 30px;
+}
+
+.team-read-more3 {
+            display: inline-block;      
+            border-radius: 5px;
+			font-size: 16px;
+            padding: 10px 20px;        
+            margin-top: 20px;
+        }
+
+        .team-read-more3 i {  
+            padding-right: 10px;
+            font-size: 17px;
+        }
+         
+        .team-read-more3:hover {
+            background-color: #181b25;
+            color: #fff;
+			transition: 0.5s;
+        }
+
+.blog-sub-title {
+    font-size: 20px;  
+}
+
+.blog-title {
+    font-size: 33px;
+    margin-bottom: 25px;
+}
+.blog-title2 {
+    margin-bottom: 5px;
+    font-size: 23px;   
+}
+.blog-p1  {
+    font-size: 18px;
+}
+.blog-read-more2 {
+            font-size:14px;          
+            margin-right	:20px;
+			margin-left	: 30px;
+}
+ 
 	.popup-container {
     display: none;    
     }
@@ -2219,8 +2416,94 @@
     padding: 4px 14px;
 	margin-bottom: 10px ;
     }
+	
+	.contact  {    
+    padding-top: 55px;
+     }
+	.contact-sub-title {
+    font-size: 20px;   
+    line-height: 0.4;
+	text-align:center;
+	 font-weight: 500;
+}
+
+.contact-title {
+    font-size: 31px;   
+    line-height: 1.2;
+    margin-bottom: 20px;
+	text-align:center;
+}
+
+.contact-title2 {
+    margin-bottom: 30px;
+    font-size: 19px;   
+}
+.contact-desc {
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 400; 
+	text-align:center;	
+}
+.but {
+    font-size: 18px;
+	font-weight: 450; 
+}
+.contact-link {  
+  height: 95px; 
+  padding-top: 12px; 
+   padding-right: 10px; 	
+}
+
+.contact-info-title {
+    font-size: 19px;	 
+}
+
+.contact-info-title2 {
+    font-size: 19px;	  
+}
+
+.contact-info-text {
+    font-size: 16px;
+}
+.bb {
+    font-size: 17px  !important;
+}
+
+/* footer */
+    .footer .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+    }
+    
+    .footer .col-md-6,
+    .footer .col-lg-6,
+    .footer .col-xl-3 {
+        width: 100%;
+    }
+
+    .footer .footer-item h4 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .footer .footer-item a {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .footer .social-icons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.2rem;
+    }
+
 }	
 	
+
+
+
 
 /* Start Media Query for max-width: 359px */
 @media (max-width: 359px) {
