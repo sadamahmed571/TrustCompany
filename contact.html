@@ -170,8 +170,6 @@
         <!-- Header End -->
 
 
-
-
 <!-- Contact Start -->
 <div class="container-fluid contact bg-light ">
     <div class="container">
@@ -188,36 +186,36 @@
                     <div class="row g-3"  >
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating ">
-                                <input type="text" class="form-control textarea-height2" id="name" placeholder="Your Name">
-                                <label for="name">الاسم</label>
+                                <input type="text" class="form-control textarea-height2" id="contact_name" placeholder="Your Name">
+                                <label for="contact_name">الاسم</label>
                             </div>
                         </div>
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating ">
-                                <input type="email" class="form-control textarea-height2" id="email" placeholder="Your Email">
-                                <label for="email">الايميل</label>
+                                <input type="email" class="form-control textarea-height2" id="contact_email" placeholder="Your Email">
+                                <label for="contact_email">الايميل</label>
                             </div>
                         </div>
                         <div class="col-lg-12 col-xl-6">
                             <div class="form-floating ">
-                                <input type="phone" class="form-control textarea-height2" id="phone" placeholder="Phone">
-                                <label for="phone">رقم الهاتف</label>
+                                <input type="phone" class="form-control textarea-height2" id="contact_phone" placeholder="Phone">
+                                <label for="contact_phone">رقم الهاتف</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating ">
-                                <input type="text" class="form-control textarea-height2" id="subject" placeholder="Subject">
-                                <label for="subject">موضوع الرسالة</label>
+                                <input type="text" class="form-control textarea-height2" id="contact_subject" placeholder="Subject">
+                                <label for="contact_subject">موضوع الرسالة</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control textarea-height" placeholder="Leave a message here" id="message"></textarea>
-                                <label for="message">الرسالة ...</label>
+                                <textarea class="form-control textarea-height" placeholder="Leave a message here" id="contact_message"></textarea>
+                                <label for="contact_message">الرسالة ...</label>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary but w-100 py-3">إرسل</button>
+                            <button id="sendButton" class="btn btn-primary but w-100 py-3">إرسل</button>
                         </div>
                     </div>
                 </form>
@@ -279,7 +277,7 @@
                     </div>
                 </div>
             </div>
-			 <div class="col-lg-6 col-xl-4 fadeInUp" data--delay="0.6s">
+             <div class="col-lg-6 col-xl-4 fadeInUp" data--delay="0.6s">
                 <a  href="index.html" class="d-inline-flex bg-white w-100    contact-link">
                     <i class="fa fa-home fa-2x   icon-spacing"></i>
                     <div>
@@ -291,7 +289,40 @@
         </div>
     </div>
 </div>
-<!-- Contact End --> 
+<!-- Contact End -->
+
+<script>
+    document.getElementById('sendButton').addEventListener('click', function(e) {
+        e.preventDefault(); // منع الإرسال الافتراضي للفورم
+
+        // جمع البيانات من الحقول
+        var name = document.getElementById('contact_name').value.trim();
+        var email = document.getElementById('contact_email').value.trim();
+        var phone = document.getElementById('contact_phone').value.trim();
+        var subject = document.getElementById('contact_subject').value.trim();
+        var message = document.getElementById('contact_message').value.trim();
+
+        // التحقق من أن الحقول غير فارغة (اختياري، لكن مفيد)
+        if (!name || !email || !phone || !subject || !message) {
+            alert('يرجى ملء جميع الحقول قبل الإرسال.');
+            return;
+        }
+
+        // تشكيل الرسالة كرسالة واحدة
+        var fullMessage = 'رسالة جديدة من الموقع:\n\n' +
+                          'الاسم: ' + name + '\n' +
+                          'الإيميل: ' + email + '\n' +
+                          'رقم الهاتف: ' + phone + '\n' +
+                          'موضوع الرسالة: ' + subject + '\n' +
+                          'الرسالة: ' + message;
+
+        // ترميز الرسالة للـ URL
+        var encodedMessage = encodeURIComponent(fullMessage);
+
+        // توجيه إلى واتس آب
+        window.location.href = 'https://wa.me/+967777967272?text=' + encodedMessage;
+    });
+</script>
 
   <!-- Footer Start -->
  <div class="container-fluid footer  fadeIn" data--delay="0.2s">
@@ -374,32 +405,7 @@
 
 <!-- JavaScript للتحكم في السلوك -->
 <script>
-    document.getElementById('Contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Get form values
-        var name = document.getElementById('name').value.trim();
-        var email = document.getElementById('email').value.trim();
-        var phone = document.getElementById('phone').value.trim();
-        var subject = document.getElementById('subject').value.trim();
-        var message = document.getElementById('message').value.trim();
-
-        // Construct the WhatsApp message
-        var whatsappMessage = 'الاسم: ' + name + '\n' +
-                              'الإيميل: ' + email + '\n' +
-                              'رقم الهاتف: ' + phone + '\n' +
-                              'موضوع الرسالة: ' + subject + '\n' +
-                              'الرسالة: ' + message;
-
-        // Encode the message for URL
-        var encodedMessage = encodeURIComponent(whatsappMessage);
-
-        // WhatsApp URL
-        var whatsappURL = 'https://wa.me/+967777967272?text=' + encodedMessage;
-
-        // Redirect to WhatsApp
-        window.open(whatsappURL, '_blank');
-    });
+    
 </script>
 
     <!-- JavaScript Libraries -->
