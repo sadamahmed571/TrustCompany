@@ -2141,7 +2141,7 @@
     .feature .feature-item {
         padding: 10px 10px !important;
         min-height: 320px;
-        gap: 10px;
+        gap: 5px;
     }
 .feature-sub-title  {
     font-size: 23px;   
