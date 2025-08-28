@@ -1805,7 +1805,7 @@
     .navbar .navbar-nav .nav-item.nav-link,
     .navbar .navbar-nav .nav-link,
     .navbar .nav-item.dropdown .nav-link {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 15px;
         margin: 3px;
         padding: 5px 2px;
@@ -1822,7 +1822,7 @@
     .navbar .nav-item.dropdown .nav-link:hover {
         background-color: #fff;
         color: #ce7529 !important;
-        font-weight: 500;
+        font-weight: 600;
         border-right: 3px solid #ce7529 !important;
     }
 
@@ -1831,7 +1831,7 @@
     .navbar .nav-item.dropdown .nav-link.active {
         background-color: #fff;
         color: #ce7529 !important;
-        font-weight: 500;
+        font-weight: 600;
         border-right: 3px solid #ce7529 !important;
     }
 
@@ -1858,23 +1858,23 @@
 
     /* Start Carousel */
     .carousel-title {   
-        font-size: 33px;
+        font-size: 34px;
         font-weight: 800;
-        line-height: 1.5; 
+        line-height: 1.4; 
         margin-bottom: 20px;
         padding: 0;
     }
 
     .carousel-p2 {
-        line-height: 1.7;   
-        font-size: 19px;
-        font-weight: 500;
+        line-height: 1.4;   
+        font-size: 16px;
+        font-weight: 510;
         
     }
 
     .carousel-caption-p {
-        line-height: 1.5; 
-        font-size: 17px;
+        line-height: 1.4; 
+        font-size: 21px;
         font-weight: 400;
         padding: 2px;
         margin-bottom: 50px;
@@ -1882,7 +1882,7 @@
 
     .carousel-caption a {
         border-radius: 5px;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 600;
         padding: 12px 22px;
     }
@@ -1948,18 +1948,20 @@
         margin-right: 0 !important;
         font-size: 19px !important;
         line-height: 1.3;
+        
     }
 .about-sub-title  {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 450;
 	line-height:0.5;
 	 text-align:center;  
 }
 
 .about-title {
-    font-size: 27px;
+    font-size: 32px;
     font-weight: 510;  
    text-align:center;  
+    line-height: 1.4;
 }
 
 .about-p1  {
@@ -1973,18 +1975,20 @@
     }
 
     .features-grid {
-		margin-top: 0 !important;
-        margin-left: 15px!important;
-		right: 0 !important;
+		margin: 0 auto !important;
+        
     }
 
     .about-p {
-        font-size: 15px;
-		font-weight: 500;
+        font-size: 18px;
+		font-weight: 510;
+        text-align: right;
+        color: #ce7529 !important;
+        
     }
 
     .about a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .about .about-item-image .img-1 {
@@ -2016,7 +2020,15 @@
     .service .service-item {
         max-height: none;
     }
+        .service-sub-title {
+    font-size: 20px;
+    
+}
 
+.service-title {
+    font-size: 31px;
+    
+}
     .service h2 {
         font-size: 30px;
         text-align: center;
@@ -2024,7 +2036,8 @@
 
     .service h4,
     .service h5 {
-        font-size: 24px;
+        font-size: 25px;
+        font-weight: 500;
     }
 .service-p1  {
     font-size: 19px;   
@@ -2130,7 +2143,7 @@
     .feature .row {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 0;
 		 width: 100%;
     }
 
@@ -2139,9 +2152,12 @@
     }
 
     .feature .feature-item {
-        padding: 15px 20px !important;
+        padding: 0 !important;
         min-height: 320px;
-        gap: 5px;
+        box-shadow: none;
+        border: none;
+        background:none;
+        gap:1px;
     }
 .feature-sub-title  {
     font-size: 23px;   
@@ -2154,30 +2170,48 @@
 	line-height:1.5;
 }
     .feature-item h4 {
-        font-size: 19px;
-        line-height: 1.4;
+        font-size: 18px;
+        line-height: 1;
+        text-align: right;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-left: 20px;
     }
-
+.feature-item h4::before {
+    margin-right: -10px;
+    font-size: 16px;
+}
     .feature-item p {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.5;
 		padding-left: 0;
 	 padding-right: 0;
+        text-align: right;
+        margin-right: 20px;
+        margin-left: 8px;
     }
 
     .feature-image {
-        width: 80px;
-        height: 80px;
-        padding: 3px;
+        width: 90px;
+        height: 90px;
+        padding: 1px;
     }
 
     .feature .feature-item .feature-img {
-        padding: 15px;
+        padding: 0;
+        margin-top:10px;
+        margin-left: 30px;
+        border-radius: 10%;
+        background: #fff !important;
+        border-bottom: 2px solid #181b25 ;
+        border-left: 2px solid #181b25 ;
+        border-top: 2px solid #ce7529 ;
+        border-right: 2px solid #ce7529 ;
     }
 
     .feature .container {
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 1px;
+        padding-right: 1px;
     }
     /* End Feature */
   .project-item {
@@ -2248,29 +2282,29 @@
     }
 
     .counter .counter-item {
-        width: 95%;
+        width: 99%;
     }
 
     .counter .counter-item .counter-item-inner {
-        padding: 25px;
-        margin-right: 12px;
-        margin-bottom: 12px;
-        top: 12px;
-        left: 12px;
+        padding: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        top: 10px;
+        left: 10px;
     }
 
     .counter .counter-item .counter-item-style {
-        width: calc(100% - 12px);
+        width: calc(100% - 10px);
     }
 
     .counter .counter-box {
-        padding-right: 12px;
-        padding-bottom: 12px;
+        padding-right: 8px;
+        padding-bottom: 0;
     }
 
     .fact-image {
-        width: 90px;
-        height: 90px;
+        width: 95px;
+        height: 95px;
     }
 
     .counter-counting span {
@@ -2283,6 +2317,7 @@
 
     .counter-item h4 {
         font-size: 22px;
+        font-weight: 800;
     }
 
     .counter .counter-btn {
@@ -2326,6 +2361,7 @@
 .team-title2 {
     margin-bottom: 0;
     font-size: 26px;
+    margin-top: 10px;
 }
 
 .team-span {   
@@ -2333,8 +2369,8 @@
 }
 
 .team-desc {
-    line-height: 1.65;
-    font-size: 18px;
+    line-height: 1.5;
+    font-size: 17px;
 }
 
 .team-info {
@@ -2347,14 +2383,14 @@
     width: 200px;
 	height: 30px; 
     margin-bottom: 10px;
-	line-height: 30px;
+	line-height: 40px;
 }
 
 .team-read-more3 {
             display: inline-block;      
             border-radius: 5px;
-			font-size: 16px;
-            padding: 10px 20px;        
+			font-size: 15px;
+            padding: 8px 18px;        
             margin-top: 20px;
         }
 
@@ -2396,7 +2432,7 @@
 	
 	 .popup-content {
        padding: 12px;
-	    width: 260px;
+	    width: 290px;
     }
 	.close-btn {
     top: 0;
@@ -2405,7 +2441,7 @@
   
    }
     .popup-item img {
-        max-width: 225px;
+        max-width: 235px;
 		margin-top: 30px;
     }
     .popup-item p {
@@ -2415,6 +2451,7 @@
 	font-size: 13px;	
     padding: 4px 14px;
 	margin-bottom: 10px ;
+	    line-height: 14px;
     }
 	
 	.contact  {    
@@ -2452,23 +2489,41 @@
 }
 .contact-link {  
   height: 95px; 
-  padding-top: 12px; 
+  padding-top: 15px; 
    padding-right: 10px; 	
 }
-
+.contact-link2 {  
+  height: 115px; 
+  padding-top: 15px; 
+   padding-right: 10px; 
+    padding-left: 10px; 
+	border-radius: 8px; 
+	border: 1px solid #e3d0c0;
+}
 .contact-info-title {
     font-size: 19px;	 
+    margin-top: 4px;
 }
 
 .contact-info-title2 {
-    font-size: 19px;	  
+    font-size: 18px;	  
+    margin-top: 3px;
 }
-
+.icon-spacing {
+    margin-left: 5px ;
+	 font-size: 20px;
+	 margin-top: 3px;
+}
 .contact-info-text {
-    font-size: 16px;
+    font-size: 15px;
 }
 .bb {
     font-size: 17px  !important;
+}
+    
+    .btn-md-square {
+	margin-top: 10px;
+	margin-bottom: 0;
 }
 
 /* footer */
@@ -2485,13 +2540,14 @@
     }
 
     .footer .footer-item h4 {
-        font-size: 17px;
+        font-size: 20px;
         margin-bottom: 10px;
+        
     }
 
     .footer .footer-item a {
-        font-size: 12px;
-        line-height: 17px;
+        font-size: 14px;
+        line-height: 19px;
     }
 
     .footer .social-icons-grid {
