@@ -4,7 +4,7 @@
             button.addEventListener('click', function (e) {
                 e.preventDefault();
                 const title = this.getAttribute('data-title');
-                const message = encodeURIComponent(`أخبرني أكثر عن ${title}`);
+                const message = encodeURIComponent(`Tell me more about  ${title}`);
                 const whatsappUrl = `https://wa.me/+905398579458?text=${message}`;
                 window.open(whatsappUrl, '_blank');
             });

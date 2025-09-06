@@ -5,7 +5,7 @@
                 e.preventDefault();
                 const title = this.getAttribute('data-title');
                 const message = encodeURIComponent(`أخبرني أكثر عن خدمة  ${title}`);
-                const whatsappUrl = `https://wa.me/+967777967272?text=${message}`;
+                const whatsappUrl = `https://wa.me/+905398579458?text=${message}`;
                 window.open(whatsappUrl, '_blank');
             });
         });
