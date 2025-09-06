@@ -1,7 +1,7 @@
 /*** General Styles ***/
 body {
     font-family: 'tajawal', sans-serif;
-    direction: rtl;
+    direction: ltr;
 }
 
 .do {
@@ -86,17 +86,17 @@ body {
 /*** WhatsApp Button ***/
 .whats-float {
     position: fixed;
-    transform: translate(70px, 0px);  
+    transform: translate(-70px, 0px);  
     bottom: 6%;
-    right: 0;
+    left: 0;
     width: 130px;
     overflow: hidden;
     background-color: #25d366;
     color: #FFF;
-    border-radius: 28px 0 0 28px;
+    border-radius:0 28px  28px 0;
     z-index: 10;
     transition: all 0.8s ease-in-out;
-    direction: ltr;
+    direction: rtl;
     vertical-align: middle;
 }
 
@@ -301,7 +301,7 @@ body {
     font-size: 17px;
 }
 
- 
+/* توحيد أنماط dropdown مع باقي العناصر */
 .navbar .nav-item.dropdown .nav-link {
     color: var(--bs-primary);
     font-family: "Tajawal", sans-serif;
@@ -369,26 +369,28 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 14px;
     padding:8px 18px;
     background: #1d588d;
     border-radius:5px;
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+	 font-weight: 600;
 }
 
 .whatsapp-service-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 14px;
     padding:8px 18px;
     background: #075e54;
     border-radius:5px;
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+	 font-weight: 600;
 }
 
 .phone-service-btn:hover,
@@ -400,10 +402,9 @@ body {
 
 .phone-service-btn i,
 .whatsapp-service-btn i {
-    margin-left:6px;
+    margin-left:7px;
     margin-right: 0;
 }
-
 .lang-switch-btn {
     display: inline-flex;
     align-items: center;
@@ -468,39 +469,40 @@ body {
 
 .carousel-title {
     color: #fff;
-    font-size: 55px;
+    font-size: 48px;
 	font-weight:600;
 	margin-bottom: 20px;
+	font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 
 .carousel-p2 {
     line-height: 1.3; 
     color: #fcd577;
-    font-size: 23px;
-	font-weight:500;
+    font-size: 20px;
+	font-weight:600;
 }
 
 .carousel-caption-p {
-   line-height: 1.8; 
+   line-height: 1.3; 
     color: #fff;
-    font-size: 27px;
+    font-size: 34px;
 	font-weight:400;
 	padding: 10px;
 	margin-bottom: 50px;
 }
 .carousel-caption a {
     border-radius: 5px;
-	font-size: 22px;
-    font-weight: 600;
+	font-size: 20px;
+    font-weight: 200;
     padding: 12px 22px;
     font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 
 .carousel-caption i {
-    line-height: 1.3; 
-    padding-right: 13px;
+    line-height: 1.4; 
+    padding-left: 10px;
     font-weight: 100;
-    font-size: 23px;
+    font-size: 21px;
 }
 .carousel .carousel-inner .carousel-item img {
     animation-name: image-zoom;
@@ -601,34 +603,35 @@ body {
 
 .about-sub-title  {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
 	color :#ce7529;
 	line-height:0.5;
 }
 
 .about-title {
-    font-size: 41px;
-    font-weight: 510;    
+    font-size: 38px;
+    font-weight: 700;    
 	color :#181b25;
+	font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 
 .about-p1  {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 400;
 	color :#181b25;
 	margin-top: 22px;
-	line-height: 1.8;
+	line-height: 1.5;
 }
 
 .about-p {
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .about-item h5 {
     font-size: 20px;
-    font-weight: 510;
-    margin-right:15px;
-	color :#181b25;
+    font-weight: 600;
+    margin-left:15px;
+	color :#ce7529;
 }
 .about-img3 {
     width: 244px;
@@ -637,7 +640,7 @@ body {
     border-color: var(--bs-secondary) var(--bs-primary) var(--bs-primary) var(--bs-secondary);
 } 
 .about-icon-img1 {
-	 margin-right:80px;
+	 margin-left:80px;
     width: 65px;
     height: 65px;
     object-fit: contain;
@@ -706,21 +709,21 @@ body {
 .about-read-more3 {
             display: inline-block;      
             border-radius: 5px;
-			font-size: 21px;
+			font-size: 20px;
             padding: 10px 22px;
             background-color: #181b25;
             transition: background-color 0.3s ease, border-color 0.3s ease;
             text-align: center;
             color: #fff;
-            font-weight: 700;
+            font-weight: 200;
             text-decoration: none; 
             margin-top: 10px;
 			 font-family: "Noto+Naskh+Arabic", sans-serif;
         }
 
         .about-read-more3 i {  
-            padding-right: 12px;
-            font-size: 21px;
+            padding-left: 6px;
+            font-size: 20px;
         }
          
         .about-read-more3:hover {
@@ -741,7 +744,7 @@ body {
         }
 
         .service {
-           font-family: "Tajawal", sans-serif;
+           font-family: "Noto+Naskh+Arabic", sans-serif;
         }
 
         .service .service-item {
@@ -764,44 +767,43 @@ body {
             border: none; 
         }
         .service-sub-title {
-    font-size: 22px;
-    font-weight: 450;
+    font-size: 23px;
+    font-weight: 300;
     color: #ce7529;
     line-height: 0.3;
 }
 
 .service-title {
-    font-size: 45px;
-    font-weight: 510;
+    font-size: 46px;
+	font-weight:600;
     color: #181b25;
     line-height: 1.5;
     margin-bottom: 0;
+	font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 
 .service-p1  {
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 27px;
+    font-weight: 100;
 	color :#181b25;
 	margin-top: 5px;
-	line-height: 1.4;
+	line-height: 1.5;
 	 margin-bottom: 35px;
 }
-  
-      
-
+        
         .service .service-item .service-title {  
             position: absolute;
             width: 100%;
-            height: 70px;
+            height: 65px;
             bottom: 0;
-            right: 0;
+            left: 0;
             display: flex;
-            transition: margin-right 0.5s ease;
+            transition: margin-left 0.5s ease;
             z-index: 3;
         }
 
         .service .service-item:hover .service-title {
-            margin-right: -100%;
+            margin-left: -100%;
         }
 
         .service-title1 {
@@ -815,9 +817,10 @@ body {
         .service h4 {
             font-size: 24px;  
             line-height: 1.3;
-            color:  #181b25;
+            color:  #ce7529;
             font-weight: 800;
-            margin-right: 10px;	
+            margin-left: 15px;
+			font-family:"Noto+Naskh+Arabic", sans-serif;
         }
 
         .service h5 {
@@ -831,10 +834,9 @@ body {
         .service h4::before {
             content: "✦";
             display: inline-block;
-            margin-left: 7px;
+            margin-right: 10px;
             color: #ce7529;
-            font-size: 23px;
-            vertical-align: middle;
+            font-size: 23px;            
         }
 
         .service a.fs-4 {
@@ -900,7 +902,7 @@ body {
           line-height: 1.6;
           padding:8px;
           font-size:18px;
-          font-weight:400;
+          font-weight:100;
         }
 
         .ser-read-more {
@@ -916,12 +918,12 @@ body {
         }
 
         .ser-read-more i{  
-          padding-right: 4px  ;
+          padding-left: 4px  ;
           font-size: 16px;  
         }
          
         .ser-read-more:hover {
-          background-color: #fff8e1;
+          background-color: #fff;
           border-color: #ce7529;
         }
          
@@ -965,7 +967,7 @@ body {
             opacity: 1;
         }
 
- 
+    
         .ser-main-container {
             display: flex;
             flex-direction: row;
@@ -986,7 +988,7 @@ body {
             flex-direction: column;
             height: auto;
             margin: 0;
-            direction: rtl;
+            direction: ltr;
             flex: 1;
 			border-bottom: 1px solid #e2dfd6; border-radius: 0 0 5px 5px;			
         }
@@ -1013,8 +1015,8 @@ body {
         }
 
         .ser-slide-container2-p {
-            color: #181b25;
-            font-size: 33px;
+            color: #ce7529;
+            font-size: 34px;
             font-weight: 800;
             text-align: right;
             position: relative;
@@ -1029,7 +1031,7 @@ body {
             width:10%;
             height: 2px;
             background-color: #ce7529; 
-            margin-left: 10px; 
+            margin-right: 10px; 
         }
 
         .ser-slide-container2-p::after {
@@ -1038,7 +1040,7 @@ body {
             width: 250px; 
             height: 2px; 
             background-color: #ce7529;
-            margin-right: 15px; 
+            margin-left: 15px; 
         }
 
         .ser-slide-group {
@@ -1088,23 +1090,23 @@ body {
             position: absolute;
             white-space: nowrap;
             width: 100%;
-            font-size: 22px;   
-            font-weight: 500;
+            font-size: 24px;   
+            font-weight: 600;
             transform: rotate(0deg);
             -ms-writing-mode: lr-tb;
             filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-            padding-left: 25px;
-            padding-right: 75px;
+            padding-right: 25px;
+            padding-left: 75px;
             line-height: 60px;
-            text-align: right;
+            text-align: left;
         }
 
         .ser-slide-title2 span::before {
             content: "✦";
             display: inline-block;
-            margin-left: 10px;
+            margin-right: 10px;
             color: #fff;
-            font-size: 20px;
+            font-size: 23px;
             vertical-align: middle;
         }
 
@@ -1120,15 +1122,18 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-start;			
+            align-items: flex-start;
+            border-left:1px solid #ce7529;
+            border-right:1px solid #ce7529;	
+			border-bottom:1px solid #ce7529;
+			border-radius:0 0 5px 5px ;
         }
 
-        .ser-right-image2 {
-            border : 1px solid #e7dacc;
+        .ser-right-image2 {            
             border-radius: 5px;
             flex: 0 0 auto;
             max-width: 379px;
-            height: auto;
+            height: auto;			  
         }
 
         .ser-right-image2 img {
@@ -1144,16 +1149,16 @@ body {
             flex: 1;
             display: flex;
             flex-direction: column;
-            margin-right: 20px;
+            margin-left: 20px;
         }
 
         .ser-product-description2 {
-            text-align: right;
+            text-align: left;
             margin-bottom: 10px;
-            line-height: 1.65;
-            font-size: 18px;
-            padding-left: 10px;
-            padding-right: 10px;
+            line-height: 1.55;
+            font-size: 21px;
+            padding-left: 1px;
+            padding-right:10px;
             font-weight: 500;
             color: #181b25;
         }
@@ -1174,7 +1179,7 @@ body {
         }
 
         .ser-read-more2 i {  
-            padding-right: 5px;
+            padding-left: 3px;
             font-size: 16px;
         }
          
@@ -1211,7 +1216,7 @@ body {
         }
 
         .ser-read-more3 i {  
-            padding-right: 7px;
+            padding-left: 5px;
             font-size: 19px;
         }
          
@@ -1242,7 +1247,7 @@ body {
 	border-radius: 8px; 
     background: var(--bs-white);
     box-shadow: 0 1px 5px rgba(35, 20, 0, 0.03);
-    height: 100%; 
+    height: 95%; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
@@ -1264,10 +1269,11 @@ body {
 }
 
 .feature-title {
-    font-size: 47px;
-    font-weight: 510;    
+    font-size: 46px;
+    font-weight: 600;    
 	color :#181b25;
-	line-height:1.5;
+	line-height:1.4;
+	font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 .feature-p1  {
     font-size: 26px;
@@ -1278,26 +1284,26 @@ body {
 	 margin-bottom: 35px;
 }
 .feature-item p {
-    font-size: 20px;
+    font-size: 22px;
     color: #51504e !important;   
-    line-height: 1.5; 
+    line-height: 1.2; 
     padding-left: 10px;
 	 padding-right: 10px;
     font-weight: 450;
     flex-grow: 1; 
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-top: 0;  
 }
 
 .feature-item h4 {
-    color: #181b25 !important;
+    color: #ce7529 !important;
     font-weight: 600;
     font-size: 29px;
     font-family: 'Tajawal', sans-serif;     
 }
 
 .feature-item h4::before {
-    content: " ✔ ";  
+    content: " ⟡ ";  
     font-family: "Font Awesome 5 Free";  
     font-weight: 200;
     color: #ce7529;      
@@ -1320,8 +1326,7 @@ body {
     margin: 0 auto;
     border-radius: 50%;
     padding: 1px;
-	background: #ce7529 !important;
-	border: 1px solid #e7ddd0 ;
+	background: #ce7529 !important;	 
 }
 
 .feature-image {
@@ -1364,7 +1369,10 @@ body {
 	 margin-bottom: 80px;
 }
 
-
+.project-dir {
+    direction:rtl;
+    padding-right: 11%; 
+}
 .project .project-item .project-img {
     position: relative;
 }
@@ -1374,25 +1382,26 @@ body {
 }
 
 .project-sub-title  {
-    font-size: 26px;
-    font-weight: 450;
+    font-size: 27px;
+    font-weight: 400;
     color :#ce7529;
     line-height:0.3;
 }
 
 .project-title {
     font-size: 45px;
-    font-weight: 510;    
+    font-weight: 600;    
     color :#181b25;
     line-height:1.5;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+	font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 .project-p1  {
-    font-size: 26px;
+    font-size: 27px;
     font-weight: 400;
 	color :#181b25;
 	margin-top: 5px;
-	line-height: 1.4;
+	line-height: 1.3;
 	 margin-bottom: 35px;
 }
 .project-img2  {
@@ -1413,15 +1422,15 @@ body {
     right: 0;
     background: #181b25;
     z-index: -1;
-    border-radius: 0 0 20px 0 ;
+    border-radius: 4px 4px 20px 4px ;
 }
 
 .project-name {
     color: #181b25 !important;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 29px;
     font-family: 'Tajawal', sans-serif;   
-    margin-right	: 16px;
+    margin-left	: 30px;
 }
 
 .project-name::before {
@@ -1435,17 +1444,17 @@ body {
 .project-name span {
     color: #ce7529 !important;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Tajawal', sans-serif;   
-    margin-right: 13px;	
-	vertical-align: bottom;
+    margin-left: 8px;	
+	vertical-align: middle;
 }
 
 .project-dec {
     color: #181b25 !important;
     font-weight: 400;
-    font-size: 21px;
-	line-height: 1.6;
+    font-size: 24px;
+	line-height: 1.3;
     font-family: 'Tajawal', sans-serif;   
     margin-right	: 26px;
 	margin-left	: 66px;
@@ -1480,7 +1489,7 @@ body {
  .project-read-more3 {
             display: inline-block;      
             border-radius: 5px;
-            font-size: 19px;
+            font-size: 20px;
             padding: 12px 22px;
             background-color: #ce7529;
             transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -1492,8 +1501,8 @@ body {
         }
 
         .project-read-more3 i {  
-            padding-right: 10px;
-            font-size: 21px;
+            padding-left: 5px;
+            font-size: 19px;
         }
          
         .project-read-more3:hover {
@@ -1501,8 +1510,7 @@ body {
             border-color: #fff;
             color: #fff;
         }
-  
- 
+   
 /*** Projects End ***/
 
 
@@ -1558,14 +1566,14 @@ body {
 }
 
 .fact-image {
-    max-width: 110px;
-    max-height: 110px;
+    max-width: 130px;
+    max-height: 130px;
 }
     
 .counter-item h4 {
-    color: #253750 !important;
+    color: #2b3e59 !important;
     font-weight: 800;
-    font-size: 23px;
+    font-size: 26px;
 	line-height:1.4;
     font-family: 'Tajawal', sans-serif;    
 }
@@ -1573,7 +1581,7 @@ body {
 .counter-counting span {
     color: #2f4360 !important;
     font-weight: 800;
-    font-size: 26px;
+    font-size: 27px;
     font-family: 'Tajawal', sans-serif;
     font-size: 60px;
 }     
@@ -1627,7 +1635,7 @@ body {
 /*** ALTERNATIVE STRUCTURE SCHEMES Start ***/
 .team .container {
     width: 100%;
-    max-width: 1400px;  
+    max-width: 1400px; /* زيادة الحد الأقصى قليلاً للشاشات الكبيرة */
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -1641,7 +1649,7 @@ body {
 }
 
 .team-sub-title {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 450;
     color: #ce7529;
     line-height: 0.3;
@@ -1649,10 +1657,11 @@ body {
 
 .team-title {
     font-size: 45px;
-    font-weight: 510;
+    font-weight: 600;
     color: #181b25;
     line-height: 1.5;
     margin-bottom: 0;
+	font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 
 .team-p1  {
@@ -1660,41 +1669,43 @@ body {
     font-weight: 400;
 	color :#181b25;
 	margin-top: 5px;
-	line-height: 1.4;
+	line-height: 1.3;
 	 margin-bottom: 35px;
+	 
 }
 
 .team-title2 {
     margin-bottom: 0;
-    font-size: 28px;
-    font-weight: 510;
+    font-size: 26px;
+    font-weight: 400;
     color: #181b25;
+	font-family: 'Tajawal', sans-serif;
 }
 
 .team-span {
     color: #ce7529 !important;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Tajawal', sans-serif;
 }
 
 .team-desc {
     margin-bottom: 6px;
-    margin-right: 11px;
-    margin-left: 8px;
+    margin-left: 11px;
+    margin-right: 8px;
     margin-top: 0;
-    line-height: 1.55;
-    font-size: 16px;
+    line-height: 1.45;
+    font-size: 17px;
     font-weight: 400;
     padding: 10px;
     color: #fff;
-    text-align: right;
+    text-align: left;
 }
 
 .team-info {
-    margin-top: 15px;
+    margin-top: 24px;
     margin-bottom: 2px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .team-info i {
@@ -1706,14 +1717,14 @@ body {
 .team-read-more2 {
     display: flex;
     border-radius: 5px;
-    font-size: 12px;
-    width: 160px;
+    font-size: 13px;
+    width: 185px;
 	height: 25px;
     background-color: #fff;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     text-align: center;
     color: #181b25;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     margin-bottom: 10px;
 	line-height: 25px;
@@ -1722,13 +1733,13 @@ body {
 }
 
 .team-read-more2 i {
-    padding-right: 8px;
+    padding-left: 8px;
     font-size: 15px;
 }
 
 .team-read-more2:hover {
-    background-color: #fcd577;
-    color: #181b25;
+    background-color: #ce7529;
+    color: #fff;
 }
 
 .team-read-more3 {
@@ -1746,8 +1757,8 @@ body {
         }
 
         .team-read-more3 i {  
-            padding-right: 10px;
-            font-size: 21px;
+            padding-left: 5px;
+            font-size: 18px;
         }
          
         .team-read-more3:hover {
@@ -1872,17 +1883,18 @@ body {
     padding-bottom:70px;
 }
 .blog-item {
-    background: #fff;
      border-radius: 15px;
+	 border: 1px solid #fcd577;
 }
 
 .blog .blog-item .blog-img {
     position: relative;
     overflow: hidden;
+ 
 }
 
 .blog-sub-title {
-    font-size: 22px;
+    font-size: 27px;
     font-weight: 450;
     color: #ce7529;
     line-height: 0.3;
@@ -1890,7 +1902,7 @@ body {
 
 .blog-title {
     font-size: 45px;
-    font-weight: 510;
+    font-weight: 610;
     color: #181b25;
     line-height: 1.5;
     margin-bottom: 25px;
@@ -1907,12 +1919,13 @@ body {
 }
 
 .blog-p1  {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
 	color :#181b25;
 	margin-top: 5px;
 	line-height: 1.4;
 	 margin-bottom: 25px;
+	  padding-left: 20px
 }
 
 
@@ -2006,26 +2019,27 @@ body {
     font-weight: 450;
     color: #ce7529;
     line-height: 0.4;
-	text-align: right;
+	text-align: left;
 }
 
 .contact-title {
-    font-size: 38px;
-    font-weight: 510;
+    font-size: 42px;
+    font-weight: 600;
     color: #181b25;
     line-height: 1.3;
     margin-bottom: 20px;
-	text-align: right;
+	text-align: left;
+	font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 
 .contact-title2 {
     margin-bottom: 25px;
     font-size: 23px;
     font-weight: 510;
-    color: #181b25;
-	border-top:1px solid #181b25;
-	border-left:1px solid #181b25;
-	border-right:1px solid #181b25;
+    color: #ce7529;
+	border-top:1px solid #ce7529;
+	border-left:1px solid #ce7529;
+	border-right:1px solid #ce7529;
 	padding-top: 15px;
 	border-radius: 8px 8px 0 0 ;
 }
@@ -2064,11 +2078,11 @@ body {
 .contact-desc {
     margin-bottom: 15px;
     margin-top: 0;
-    line-height: 1.6;
-    font-size: 21px;
+    line-height: 1.5;
+    font-size: 23px;
     font-weight: 500;
     color: #51504e;
-    text-align: right;
+    text-align: left;
 }
 
 .but {
@@ -2077,7 +2091,7 @@ body {
 }
 .comment-icon {
     padding-left: 5px;
-    color: #181b25;
+    color: #ce7529;
 	
 }
 
@@ -2114,7 +2128,7 @@ body {
 .social-icons-grid {
     display: flex;
     flex-direction: row;
-    gap: 12px;  
+    gap: 12px; /* مباعدة بين الأيقونات */
 	padding-right: 30px; 
 }
 
@@ -2144,7 +2158,7 @@ body {
 }
 
 .footer .footer-item h4 {
-    line-height: 30px;
+    line-height: 32px;
     color: #ce7529;
    font-size: 20px;
    margin-bottom: 15px;
@@ -2155,7 +2169,7 @@ body {
      margin-bottom: 10px;
     color: #fcd577;
     transition: 0.5s;
-	  font-size: 15px;
+	  font-size: 17px;
 }
  
 .footer .footer-item p {
@@ -2166,8 +2180,8 @@ body {
     color: #fff;
 }
 .footer .footer-item  i {
-    padding-left: 4px;
-	 color: #f;
+    padding-right: 4px;
+	 color: #fcd577;
 }
 .footer .footer-item .footer-btn a,
 .footer .footer-item .footer-btn a i {
@@ -2279,7 +2293,7 @@ body {
 .close-btn {
     position: absolute;
     top: 0;
-    right: 15px;
+    left: 15px;
     font-size: 33px;
     cursor: pointer;
     color: #d1b9a4;
@@ -2324,6 +2338,8 @@ body {
 .download-btn i {
     margin-left: 8px;
 }
+
+
 
 
 /*** copyright Start ***/

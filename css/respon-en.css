@@ -3,8 +3,8 @@
     /* Start WhatsApp Float Button */
     .whats-float {
         width: 120px; 
-        transform: translate(65px, 0px); 
-        border-radius: 25px 0 0 25px; 
+        transform: translate(-65px, 0px); 
+        border-radius:0 25px   25px 0; 
     }
 
     .whats-float a span {
@@ -127,8 +127,8 @@
         width: 90px;
         padding: 5px 2px;
         background: #fffefc;
-        border-radius: 5px 0 0 5px;
-        border-right: 3px solid #181b25 !important;
+        border-radius: 0 5px 5px 0;
+        border-left: 3px solid #181b25 !important;
         color: #181b25;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
@@ -140,7 +140,7 @@
         background-color: #fff;
         color: #ce7529 !important;
         font-weight: 500;
-        border-right: 3px solid #ce7529 !important;
+        border-left: 3px solid #ce7529 !important;
     }
 
     .navbar .navbar-nav .nav-item.nav-link.active,
@@ -149,7 +149,7 @@
         background-color: #fff;
         color: #ce7529 !important;
         font-weight: 700;
-        border-right: 3px solid #ce7529 !important;
+        border-left: 3px solid #ce7529 !important;
     }
 
     .navbar .navbar-nav .nav-item {
@@ -482,8 +482,8 @@
     /* Start WhatsApp Float Button */
     .whats-float {
         width: 120px; 
-        transform: translate(65px, 0px); 
-        border-radius: 25px 0 0 25px;  
+        transform: translate(-65px, 0px); 
+        border-radius:0 25px  25px 0;  
     }
 
     .whats-float a span {
@@ -618,7 +618,7 @@
         margin: 8px;
         padding: 5px 2px;
         background: #fffefc;
-        border-right: 3px solid #181b25 !important;
+        border-left: 3px solid #181b25 !important;
         color: #181b25;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
@@ -630,7 +630,7 @@
         background-color: #fff;
         color: #ce7529 !important;
         font-weight: 500;
-        border-right: 3px solid #ce7529 !important;
+        border-left: 3px solid #ce7529 !important;
     }
 
     .navbar .navbar-nav .nav-item.nav-link.active,
@@ -639,7 +639,7 @@
         background-color: #fff;
         color: #ce7529 !important;
         font-weight: 500;
-        border-right: 3px solid #ce7529 !important;
+        border-left: 3px solid #ce7529 !important;
     }
 
     .navbar .navbar-nav .nav-item {
@@ -1023,6 +1023,7 @@
 
 
 
+
 /* Start Media Query for max-width: 768px */
 @media (max-width: 768px) {
     
@@ -1030,8 +1031,8 @@
     /* Start WhatsApp Float Button */
     .whats-float {
         width: 105px; 
-        transform: translate(57px, 0px); 
-        border-radius: 15px 0 0 15px;  
+        transform: translate(-57px, 0px); 
+        border-radius:0 15px   15px 0;  
         bottom: 6%;
         right: 0;
     }
@@ -1065,15 +1066,15 @@
     }
 
     .phone-service-btn {
-		 display: inline-flex;
-        font-size: 12px;
+		  display: inline-block;
+        font-size: 11px;
         padding: 6px 16px;
         margin-left: 30px;
     }
 
-    .whatsapp-service-btn {
-		 display: inline-flex;
-        font-size: 12px;
+    .whatsapp-service-btn {  
+	    display: inline-block;
+        font-size: 11px;
         padding: 6px 16px; 
         margin-right: 30px;
     }
@@ -1152,7 +1153,7 @@
     .navbar .navbar-nav .nav-link,
     .navbar .nav-item.dropdown .nav-link {
         font-weight: 500;
-        font-size: 17px;
+        font-size: 15px;
         margin: 3px;
         padding: 5px 2px;
         background: #fffefc;
@@ -1160,7 +1161,7 @@
         color: #181b25;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
-        width: 130px;
+        width: 110px;
     }
 
     .navbar .navbar-nav .nav-item.nav-link:hover,
@@ -1792,7 +1793,6 @@
 
 
 
-
 /* Start Media Query for max-width: 480px */
 @media (max-width: 480px) {
     
@@ -1808,8 +1808,8 @@
       /* Start WhatsApp Float Button */
     .whats-float {
         width: 105px; 
-        transform: translate(57px, 0px); 
-        border-radius: 15px 0 0 15px;  
+        transform: translate(-57px, 0px); 
+        border-radius:0 15px  15px 0;  
         bottom: 6%;
         right: 0;
     }
@@ -1885,7 +1885,7 @@
 
     .navbar .nav-item .dropdown-menu {
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         gap: 8px;
         position: absolute;
@@ -1906,6 +1906,7 @@
         padding: 6px 8px;
         font-weight: 500;
         white-space: nowrap;
+		text-align: left;
     }
 
     .navbar .navbar-toggler {
@@ -1933,11 +1934,11 @@
         margin: 3px;
         padding: 5px 2px;
         background: #fffefc;
-        border-right: 3px solid #181b25 !important;
+        border-left: 3px solid #181b25 !important;
         color: #181b25;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
-        width: 110px;
+        width: 100px;
     }
 
     .navbar .navbar-nav .nav-item.nav-link:hover,
@@ -1946,7 +1947,7 @@
         background-color: #fff;
         color: #ce7529 !important;
         font-weight: 600;
-        border-right: 3px solid #ce7529 !important;
+        border-left: 3px solid #ce7529 !important;
     }
 
     .navbar .navbar-nav .nav-item.nav-link.active,
@@ -1955,7 +1956,7 @@
         background-color: #fff;
         color: #ce7529 !important;
         font-weight: 600;
-        border-right: 3px solid #ce7529 !important;
+        border-left: 3px solid #ce7529 !important;
     }
 
     .navbar .navbar-nav .nav-item {
@@ -2044,7 +2045,9 @@
     .about {
         width: 100%;  
     }
-
+.about-icon-img1 {
+	 margin-left:0;    
+} 
     .horizontal-about {
         display: flex;
         justify-content: space-between;
@@ -2065,12 +2068,14 @@
 
     .horizontal-about .about-item .text-secondary i {
         font-size: 18px !important;
+		margin: 0 auto !important;
     }
 
     .horizontal-about .about-item h5 {
-        margin-right: 0 !important;
-        font-size: 19px !important;
+        margin : 0 auto !important;
+        font-size: 17px !important;
         line-height: 1.3;
+		color: #181b25 !important;
         
     }
 .about-sub-title  {
@@ -2103,18 +2108,19 @@
     }
 
     .about-p {
-        font-size: 15px;
-		font-weight: 410;
-        text-align: right;
-        color: #ce7529 !important;        
+        font-size: 18px;
+		font-weight: 510;
+        text-align: left;
+        color: #ce7529 !important;
+        
     }
 
     .about a {
-        font-size: 16px;
+        font-size: 14px;
     }
-.about-read-more3 i {  
-            padding-right: 10px;
-            font-size: 18px;
+ .about-read-more3 i {  
+            padding-left: 6px;
+            font-size: 14px;
         }
     .about .about-item-image .img-1 {
         margin-bottom: 170px;
@@ -2284,8 +2290,13 @@
         background:none;
         gap:1px;
     }
+	.feature .feature-item:hover {
+    background:#fffff;
+    box-shadow: none;
+    border: none;
+}
 .feature-sub-title  {
-    font-size: 17px;   
+    font-size: 18px;   
 	line-height:0.3;
 	font-weight: 510;
 }
@@ -2304,25 +2315,25 @@
     padding: 5px;
 }
     .feature-item h4 {
-        font-size: 18px;
+        font-size: 19px;
         line-height: 1;
-        text-align: right;
+        text-align: center;
         font-weight: 700;
         margin-top: 20px;
-        margin-left: 20px;
+        
     }
 .feature-item h4::before {
     margin-right: -10px;
     font-size: 16px;
 }
     .feature-item p {
-        font-size: 15px;
+        font-size: 17px;
         line-height: 1.5;
 		padding-left: 0;
 	 padding-right: 0;
-        text-align: right;
-        margin-right: 20px;
-        margin-left: 8px;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 8px;
     }
 
     .feature-image {
@@ -2350,7 +2361,7 @@
     /* End Feature */
 	
 	.project  {
-    margin-top: 20px;
+    margin-top: 5px;
 	 margin-bottom: 30px;
 }
   .project-item {
@@ -2358,7 +2369,7 @@
     }
 	
 	.project-sub-title  {
-    font-size: 20px;  
+    font-size: 22px;  
     line-height:0.3;
 }
 
@@ -2368,26 +2379,26 @@
     margin-bottom: 10px;
 }
 .project-p1  {
-    font-size: 18px;  
+    font-size: 20px;  
 	margin-top: 5px;
 	line-height: 1.5;
 	 margin-bottom: 10px;
 }
 
 .project-name {  
-    font-size: 22px;   
-    margin-right	: 16px;
+    font-size: 24px;   
+    margin-left: 1px;
 }
 
 .project-name::before {  
     font-size: 1em;
 }
 .project-name span {    
-    font-size: 13px; 
-    margin-right: 8px;	
+    font-size: 14px; 
+    margin-left: 1px;	
 }
 .project-dec {  
-    font-size: 17px;
+    font-size: 19px;
 	line-height: 1.5;    
     margin-right	: 26px;
 	margin-left	: 26px;
@@ -2475,7 +2486,7 @@
     /* End Counter */
 
      .team .team-item {
-    width: 95%;  
+    width: 95%; 
     margin: 2%;
 	max-height: 450px;
   }
@@ -2483,8 +2494,7 @@
     width: 100%;
     flex: 0 0 100%;
     max-width: 100%;
-  }
-  
+  } 
   .team-sub-title {
     font-size: 22px;
     font-weight: 500;
@@ -2496,7 +2506,7 @@
 }
 
 .team-p1  {
-    font-size: 20px;
+    font-size: 21px;
 	margin-top: 5px;
 	line-height: 1.4;
 	 margin-bottom: 25px;
@@ -2504,17 +2514,17 @@
 
 .team-title2 {
     margin-bottom: 0;
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 10px;
 }
 
 .team-span {   
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .team-desc {
     line-height: 1.5;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .team-info {
@@ -2550,22 +2560,23 @@
         }
 
 .blog-sub-title {
-    font-size: 20px;  
+    font-size: 22px;  
 }
 
 .blog-title {
     font-size: 33px;
     margin-bottom: 25px;
+	font-family:"Noto+Naskh+Arabic", sans-serif;
 }
 .blog-title2 {
     margin-bottom: 5px;
-    font-size: 23px;   
+    font-size: 25px;   
 }
 .blog-p1  {
-    font-size: 18px;
+    font-size: 20px;
 }
 .blog-read-more2 {
-            font-size:14px;          
+            font-size:15px;          
             margin-right	:20px;
 			margin-left	: 30px;
 }
@@ -2580,7 +2591,7 @@
     }
 	.close-btn {
     top: 0;
-    right: 15px;
+    left: 15px;
     font-size: 30px;
   
    }
@@ -2739,8 +2750,8 @@
       /* Start WhatsApp Float Button */
     .whats-float {
         width: 105px; 
-        transform: translate(57px, 0px); 
-        border-radius: 15px 0 0 15px;  
+        transform: translate(-57px, 0px); 
+        border-radius:0 15px   15px 0;  
         bottom: 6%;
         right: 0;
     }
@@ -2816,7 +2827,7 @@
 
     .navbar .nav-item .dropdown-menu {
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         gap: 8px;
         position: absolute;
@@ -2864,7 +2875,7 @@
         margin: 5px;
         padding: 5px 2px;
         background: #fffefc;
-        border-right: 3px solid #181b25 !important;
+        border-left: 3px solid #181b25 !important;
         color: #181b25;
         text-decoration: none;
         transition: all 0.3s ease-in-out;
@@ -2877,7 +2888,7 @@
         background-color: #fff;
         color: #ce7529 !important;
         font-weight: 600;
-        border-right: 3px solid #ce7529 !important;
+        border-left: 3px solid #ce7529 !important;
     }
 
     .navbar .navbar-nav .nav-item.nav-link.active,
@@ -2886,7 +2897,7 @@
         background-color: #fff;
         color: #ce7529 !important;
         font-weight: 600;
-        border-right: 3px solid #ce7529 !important;
+        border-left: 3px solid #ce7529 !important;
     }
 
     .navbar .navbar-nav .nav-item {
@@ -2912,7 +2923,7 @@
 
     /* Start Carousel */
     .carousel-title {   
-        font-size: 34px;
+        font-size: 28px;
         font-weight: 800;
         line-height: 1.4; 
         margin-bottom: 20px;
@@ -2928,24 +2939,24 @@
 
     .carousel-caption-p {
         line-height: 1.4; 
-        font-size: 21px;
-        font-weight: 400;
+        font-size: 19px;
+        font-weight: 200;
         padding: 2px;
         margin-bottom: 50px;
     }
 
     .carousel-caption a {
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
-        padding: 12px 22px;
+        padding: 8px 18px;
     }
 
     .carousel-caption i {
         line-height: 1.3; 
         padding-right: 13px;
         font-weight: 100;
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .carousel .carousel-control-prev .carousel-control-prev-icon {
@@ -2975,7 +2986,9 @@
     .about {
         width: 100%;  
     }
-
+.about-icon-img1 {
+	 margin-left:0;    
+} 
     .horizontal-about {
         display: flex;
         justify-content: space-between;
@@ -2996,31 +3009,33 @@
 
     .horizontal-about .about-item .text-secondary i {
         font-size: 18px !important;
+		margin: 0 auto !important;
     }
 
     .horizontal-about .about-item h5 {
-        margin-right: 0 !important;
-        font-size: 19px !important;
+        margin : 0 auto !important;
+        font-size: 17px !important;
         line-height: 1.3;
+		color: #181b25 !important;
         
     }
 .about-sub-title  {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 450;
 	line-height:0.5;
 	 text-align:center;  
 }
 
 .about-title {
-    font-size: 31px;
+    font-size: 32px;
     font-weight: 510;  
    text-align:center;  
     line-height: 1.4;
 }
 
 .about-p1  {
-    font-size: 19px;
-    font-weight: 500;	
+    font-size: 20px;
+    font-weight: 400;	
 	margin-top: 12px;
 	line-height: 1.5;
 }
@@ -3034,17 +3049,20 @@
     }
 
     .about-p {
-        font-size: 17px;
-		font-weight: 410;
-        text-align: right;
+        font-size: 18px;
+		font-weight: 510;
+        text-align: left;
         color: #ce7529 !important;
         
     }
 
     .about a {
-        font-size: 16px;
+        font-size: 13px;
     }
-
+ .about-read-more3 i {  
+            padding-left: 2px;
+            font-size: 12px;
+        }
     .about .about-item-image .img-1 {
         margin-bottom: 170px;
     }
@@ -3247,13 +3265,13 @@
     .feature-item h4 {
         font-size: 18px;
         line-height: 1;
-        text-align: right;
+        text-align: left;
         font-weight: 700;
         margin-top: 20px;
         margin-left: 20px;
     }
 .feature-item h4::before {
-    margin-right: -10px;
+    margin-left: -10px;
     font-size: 16px;
 }
     .feature-item p {
@@ -3261,8 +3279,8 @@
         line-height: 1.5;
 		padding-left: 0;
 	 padding-right: 0;
-        text-align: right;
-        margin-right: 20px;
+        text-align: left;
+        margin-left: 20px;
         margin-left: 8px;
     }
 
@@ -3418,7 +3436,7 @@
     /* End Counter */
 
      .team .team-item {
-    width: 95%;  
+    width: 95%; /* A width that allows one item per row */
     margin: 2%;
 	max-height: 450px;
   }
@@ -3454,7 +3472,7 @@
 
 .team-desc {
     line-height: 1.5;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .team-info {
@@ -3624,14 +3642,14 @@
     }
 
     .footer .footer-item h4 {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 10px;
         
     }
 
     .footer .footer-item a {
         font-size: 14px;
-        line-height: 16px;
+        line-height: 19px;
     }
 
     .footer .social-icons-grid {
