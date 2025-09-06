@@ -87,7 +87,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fas fa-align-right"></span>
             </button>
-            <a href="index.html" class="navbar-brand p-0"> 
+           <a href="contact-en.html" class="lang-switch-btn ms-3">EN</a>
+               <a href="index.html" class="navbar-brand p-0"> 
                 <img src="img/ar-logo.png" alt="شعار الثقة العراقية للكونكريت الجاهز"> 
             </a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -391,32 +392,7 @@
 
 <!-- JavaScript للتحكم في السلوك -->
 <script>
-    document.getElementById('Contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
 
-        // Get form values
-        var name = document.getElementById('name').value.trim();
-        var email = document.getElementById('email').value.trim();
-        var phone = document.getElementById('phone').value.trim();
-        var subject = document.getElementById('subject').value.trim();
-        var message = document.getElementById('message').value.trim();
-
-        // Construct the WhatsApp message
-        var whatsappMessage = 'الاسم: ' + name + '\n' +
-                              'الإيميل: ' + email + '\n' +
-                              'رقم الهاتف: ' + phone + '\n' +
-                              'موضوع الرسالة: ' + subject + '\n' +
-                              'الرسالة: ' + message;
-
-        // Encode the message for URL
-        var encodedMessage = encodeURIComponent(whatsappMessage);
-
-        // WhatsApp URL
-        var whatsappURL = 'https://wa.me/+967777967272?text=' + encodedMessage;
-
-        // Redirect to WhatsApp
-        window.open(whatsappURL, '_blank');
-    });
 </script>
 
     <!-- JavaScript Libraries -->
